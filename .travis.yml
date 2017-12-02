@@ -18,12 +18,13 @@ script:
   - hexo g  #生成
 
 after_script:
-  - git clone https://${GH_REF} .deploy_git
-  - cd .deploy_git
-  - git checkout master
-  - cd ../
-  - mv .deploy_git/.git/ ./public/
+  # - git clone https://${GH_REF} .deploy_git
+  # - cd .deploy_git
+  # - git checkout master
+  # - cd ../
+  # - mv .deploy_git/.git/ ./public/
   - cd ./public
+  - git init 
   - git config user.name "dmxiaoshen"  #修改name
   - git config user.email "dmxiaoshen@163.com"  #修改email
   - echo "## 在那桃花盛开的地方">>README.md
@@ -33,7 +34,7 @@ after_script:
 
 branches:
   only:
-    - source  #只监测source分支，source是我的分支的名称，可根据自己情况设置
+    - master  #只监测source分支，source是我的分支的名称，可根据自己情况设置
 env:
  global:
    - GH_REF: github.com/dmxiaoshen/dmxiaoshen.github.io.git  #设置GH_REF，注意更改yourname
