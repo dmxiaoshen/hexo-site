@@ -1,0 +1,26 @@
+<div class="timeline timeline-wrap">
+
+  <div class="timeline-row timeline-row-major">
+      <span class="node"><i class="fa fa-calendar"></i></span>
+      <h1 class="title">&nbsp;目前共计&nbsp;<%= site.posts.length %>&nbsp;篇文章。请继续努力。</h1>
+  </div>
+  <div class="timeline-row">
+      <div class="content"></div>
+  </div>
+    <% page.posts.each(function(post, i) {  %>
+        <div class="timeline-row">
+            <span class="node"></span>
+            <div class="content">
+                <%- partial('common/post/title', { post: post, index: true, class_name: 'timeline-article-title' }) %>
+            </div>
+        </div>
+    <% }); %>
+</div>
+<% if (page.total > 1) { %>
+    <nav id="page-nav">
+        <%- paginator({
+            prev_text: '&laquo; ' + __('nav.prev'),
+            next_text: __('nav.next') + ' &raquo;'
+        }) %>
+    </nav>
+<% } %>
