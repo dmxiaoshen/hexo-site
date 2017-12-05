@@ -48,7 +48,7 @@ after_script:
 
 branches:
   only:
-    - master  #只监测source分支，source是我的分支的名称，可根据自己情况设置
+    - master  #只监测master分支，可根据自己情况设置分支
 env:
  global:
    - GH_REF: github.com/dmxiaoshen/dmxiaoshen.github.io.git  #设置GH_REF，注意更改yourname

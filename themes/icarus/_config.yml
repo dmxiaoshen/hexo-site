@@ -24,7 +24,7 @@ comment:
     gitalk:
         clientID: 1fabec40f979bccf8d4b
         clientSecret: b303e92f0dfe9d538517ef7d2663dfbf62dd3b7b
-        repo: dmxiaoshen.github.io
+        repo: hexo-site-comment
         owner: dmxiaoshen
         admin: dmxiaoshen
         distractionFreeMode: true
