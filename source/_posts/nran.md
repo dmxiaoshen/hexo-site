@@ -1,6 +1,8 @@
 ---
-title: 你若安好便是晴天——林徽因传
+title: 你若安好便是晴天
 date: 2015/08/01
+categories: essay
+essay: true
 ---
 
 燕子楼中霜月夜

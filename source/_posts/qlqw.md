@@ -1,6 +1,8 @@
 ---
 title: 墙里墙外
 date: 2015/07/01
+categories: essay
+essay: true
 ---
 
 > 原谅我这一生不羁放纵爱自由

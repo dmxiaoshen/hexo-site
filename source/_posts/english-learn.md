@@ -2,6 +2,8 @@
 title: 外语学习的真实方法及误区
 date: 2016/09/18
 toc: true
+categories: essay
+essay: true
 ---
 
 看了一篇文章，关于英语学习的。觉得恍然大悟，没错，英语就是一门语言，可是我们为什么觉得难学呢？

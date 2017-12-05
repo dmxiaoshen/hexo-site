@@ -1,6 +1,8 @@
 ---
 title: 点点星光闪动着
 date: 2015/03/15
+categories: essay
+essay: true
 ---
 
 我看过最好看的刑侦电视剧《重案六组》。

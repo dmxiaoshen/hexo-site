@@ -2,6 +2,8 @@
 title: 当我们谈论博客时我们在谈什么
 date: 2016/01/01
 toc: true
+categories: essay
+essay: true
 ---
 
 ## 为什么要写博客

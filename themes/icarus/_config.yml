@@ -1,7 +1,8 @@
 # Menus
 menu:
   主页: .
-  归档: archives
+  笔记: archives
+  杂文: categories/essay
   关于: about
 
 # Customize
@@ -23,7 +24,7 @@ comment:
     gitalk:
         clientID: 1fabec40f979bccf8d4b
         clientSecret: b303e92f0dfe9d538517ef7d2663dfbf62dd3b7b
-        repo: hexo-site-comment
+        repo: dmxiaoshen.github.io
         owner: dmxiaoshen
         admin: dmxiaoshen
         distractionFreeMode: true

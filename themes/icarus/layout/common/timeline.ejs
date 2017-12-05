@@ -1,41 +1,30 @@
 <%
-  var count=0;
-  page.posts.each(function(post, i) {
-    if(post.essay){
-      count++;
-    }
-  });
-  var max = page.posts.length-count;
-  var num = 0;
+    var count = page.posts.length;
 %>
-
 <div class="timeline timeline-wrap">
   <div class="timeline-row timeline-row-major">
       <span class="node"><i class="fa fa-folder"></i></span>
-      <h1 class="title">&nbsp;目前共计&nbsp;<%= site.posts.length-count %>&nbsp;篇笔记。请继续努力。</h1>
+      <h1 class="title">&nbsp;目前共计&nbsp;<%= page.posts.length %>&nbsp;篇杂文。请继续努力。</h1>
   </div>
 
-    <%  var last;
-    page.posts.each(function(post, i) {
+    <% var last;
+    page.posts.each(function (post, i) {
       var year = post.date.year();
       if (last != year) {
           last = year; %>
-        <div class="timeline-row" ></div>
+          <div class="timeline-row" ></div>
           <div class="timeline-row timeline-row-major">
               <span class="node"><i class="fa fa-calendar"></i></span>
               <h1 class="title"><%= year %></h1>
           </div>
           <div class="timeline-row" ></div>
       <% } %>
-    <%   if(!post.essay) { %>
-      <% num++ %>
         <div class="timeline-row">
-            <span class="node"><%= max+1-num%></span>
+            <span class="node"><%= count-i%></span>
             <div class="content">
-                <%- partial('common/post/title', { post: post, index: true, class_name: 'timeline-article-title' }) %>
+                <%- partial('post/title', { post: post, index: true, class_name: 'timeline-article-title' }) %>
             </div>
         </div>
-    <%   } %>
     <% }); %>
 </div>
 <% if (page.total > 1) { %>
