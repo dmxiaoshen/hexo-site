@@ -1,5 +1,6 @@
 <footer id="footer">
-  <script src="https://api.i-meto.com/music/player.js"></script>
+  <!--<script src="https://api.i-meto.com/music/player.js"></script>-->
+  <%- js('libs/aplayer/player') %>
     <div class="outer">
         <div id="footer-info" class="inner">
             &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
