@@ -14,7 +14,7 @@ toc: true
 ## 安装vim及net-tools等
 
 ```sh
-$ yum install vim
+$ yum install vim 
 $ yum install net-tools
 $ yum install zip unzip
 $ yum install lrzsz
