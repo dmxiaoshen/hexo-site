@@ -14,11 +14,11 @@ toc: true
 ## 安装vim及net-tools等
 
 ```sh
-$ yum install vim
-$ yum install net-tools
-$ yum install zip unzip
-$ yum install lrzsz
-$ yum install gcc gcc-c++
+$ yum install vim 
+$ yum install net-tools 
+$ yum install zip unzip 
+$ yum install lrzsz 
+$ yum install gcc gcc-c++ 
 ```
 
 ## 更改ssh默认22端口
