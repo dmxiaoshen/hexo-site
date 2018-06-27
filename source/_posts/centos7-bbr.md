@@ -2,6 +2,7 @@
 title: Centos7开启bbr加速
 date: 2017/07/18
 toc: true
+author: 故里
 ---
 
 此文完全是搬运而来，因为原文写的太棒了，根本不需要任何整理修改，如果喜欢，也可以直接访问[原文](https://ofcss.com/2016/12/12/bbr-congestion-control-algorithm-for-centos-7.html)
